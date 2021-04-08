@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1" >
+<input type="button" onclick="tinh();" value="Tính số ngày"  id="2">
+ <p id="3"></p>
+<script>
+    function tinh(){
+        let a=parseInt(document.getElementById("1").value);
+        let b= document.getElementById("3").innerText;
+        switch (a){
+            case 1:
+                document.getElementById("3").innerText="Tháng 1 có 31 ngày";
+                break;
+            case 2:
+                document.getElementById("3").innerText="Tháng 2 có 28 hoặc 29 ngày";
+                break;
+            case 3:
+                document.getElementById("3").innerText="Tháng 3 có 31 ngày";
+                break;
+            case 4:
+                document.getElementById("3").innerText="Tháng 4 có 30 ngày";
+                break;
+            case 5:
+                document.getElementById("3").innerText="Tháng 5 có 31 ngày";
+                break;
+                case 6:
+                document.getElementById("3").innerText="Tháng 6 có 30 ngày";
+                break;
+            case 7:
+                document.getElementById("3").innerText="Tháng 7 có 31 ngày";
+                break;
+            case 8:
+                document.getElementById("3").innerText="Tháng 8 có 31 ngày";
+                break;
+            case 9:
+                document.getElementById("3").innerText="Tháng 9 có 30 ngày";
+                break;
+            case 10:
+                document.getElementById("3").innerText="Tháng 10 có 31 ngày";
+                break;
+            case 11:
+                document.getElementById("3").innerText="Tháng 11 có 30 ngày";
+                break;
+            case 12:
+                document.getElementById("3").innerText="Tháng 12 có 31 ngày";
+                break;
+            default:
+                document.getElementById("3").innerText="Tháng nhập sai";
+
+
+        }
+    }
+</script>
+</body>
+</html>
