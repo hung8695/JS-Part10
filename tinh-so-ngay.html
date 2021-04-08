@@ -11,48 +11,28 @@
 <script>
     function tinh(){
         let a=parseInt(document.getElementById("1").value);
-        let b= document.getElementById("3").innerText;
+
         switch (a){
             case 1:
-                document.getElementById("3").innerText="Tháng 1 có 31 ngày";
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                document.getElementById("3").innerText="Tháng " +a+ " có 31 ngày";
                 break;
             case 2:
                 document.getElementById("3").innerText="Tháng 2 có 28 hoặc 29 ngày";
                 break;
-            case 3:
-                document.getElementById("3").innerText="Tháng 3 có 31 ngày";
-                break;
             case 4:
-                document.getElementById("3").innerText="Tháng 4 có 30 ngày";
-                break;
-            case 5:
-                document.getElementById("3").innerText="Tháng 5 có 31 ngày";
-                break;
-                case 6:
-                document.getElementById("3").innerText="Tháng 6 có 30 ngày";
-                break;
-            case 7:
-                document.getElementById("3").innerText="Tháng 7 có 31 ngày";
-                break;
-            case 8:
-                document.getElementById("3").innerText="Tháng 8 có 31 ngày";
-                break;
+            case 6:
             case 9:
-                document.getElementById("3").innerText="Tháng 9 có 30 ngày";
-                break;
-            case 10:
-                document.getElementById("3").innerText="Tháng 10 có 31 ngày";
-                break;
             case 11:
-                document.getElementById("3").innerText="Tháng 11 có 30 ngày";
-                break;
-            case 12:
-                document.getElementById("3").innerText="Tháng 12 có 31 ngày";
+                document.getElementById("3").innerText="Tháng 4 có 30 ngày";
                 break;
             default:
                 document.getElementById("3").innerText="Tháng nhập sai";
-
-
         }
     }
 </script>
