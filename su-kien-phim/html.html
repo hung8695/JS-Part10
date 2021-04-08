@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="1" src="1.png" style="position:absolute;left:0; top:0;" height="100" width="80"/>
+<script>
+    function xuong(){
+    let img=document.getElementById("1")
+    img.style.top=parseInt(img.style.top)+5+"px";}
+    function len(){
+        let img=document.getElementById("1")
+        img.style.top=parseInt(img.style.top)-5+"px";}
+    function phai(){
+        let img=document.getElementById("1")
+        img.style.left=parseInt(img.style.left)+5+"px";}
+    function trai(){
+        let img=document.getElementById("1")
+        img.style.left=parseInt(img.style.left)-5+"px";}
+        function dichuyen(evt){
+        switch (evt.keyCode){
+            case 38:
+                case 87:
+                len();
+                break;
+            case 40:
+            case 83:
+                xuong();
+
+                break;
+            case 37:
+                trai();
+                break;
+            case 39:
+                phai();
+                break;
+        }
+        }
+        function doReady(){
+        window.addEventListener("keydown", dichuyen);
+        }
+        window.onload=doReady;
+</script>
+</body>
+</html>
