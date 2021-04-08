@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+</style>
+<body style="max-height:40px;max-width:40px">
+<h1 style="position:absolute; left:220px; top:100px;">Do you love me?</h1><br>
+<input style="position:absolute; left:285px; top:235px;" onclick="bam();" style= "margin: 30px"  id="1" type="button" value="Yes">
+<input style="top: 200px; left: 200px;position: absolute" onmouseover="cham();" id="2" type="button" value="No">
+
+<script>
+    function bam(){
+       document.getElementById("1")
+       alert("Yes.You are right!")
+    }
+    function cham(){
+        document.getElementById("2")
+        let x=(Math.random()*window.innerHeight);
+        let y = (Math.random()*window.innerWidth);
+        document.getElementById("2").style.top=y+"px";
+        document.getElementById("2").style.left=x+'px';
+    }
+
+</script>
+</body>
+</html>

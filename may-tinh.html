@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    table,tr,td{
+        border-collapse: collapse;
+        border: 1px;
+        text-align: center;
+    }
+    .div{
+        display: flex;
+    }
+    .tr1{
+        display: flex;
+        justify-content: space-around;
+        padding: 2px;
+        border: 2px;
+        box-sizing: border-box;
+    }
+    .div-1{
+        border: black solid 1px;
+        width: 28%;
+    }
+
+</style>
+<body>
+<form>
+    <div class="div-1">
+        <table width="20%">
+            <div>
+                <tr><td id="1" colspan="4"><input type="text"></td></tr>
+            </div>
+            <div class="div">
+                <tr class="tr1">
+                    <td ><input type="button" value="1"></td>
+                    <td ><input type="button" value="2"></td>
+                    <td ><input type="button" value="3"></td>
+                    <td ><input type="button" value="+"></td>
+                </tr>
+            </div>
+            <div class="div">
+                <tr class="tr1">
+                    <td><input type="button" value="4"></td>
+                    <td><input type="button" value="5"></td>
+                    <td><input type="button" value="6"></td>
+                    <td><input type="button" value="-"></td>
+                </tr>
+            </div>
+            <div class="div">
+                <tr class="tr1">
+                    <td><input type="button" value="7"></td>
+                    <td><input type="button" value="8"></td>
+                    <td><input type="button" value="9"></td>
+                    <td><input type="button" value="x"></td>
+                </tr>
+            </div>
+            <div class="div">
+                <tr class="tr1">
+                    <td><input type="button" value="C"></td>
+                    <td><input type="button" value="0"></td>
+                    <td><input type="button" value="="></td>
+                    <td><input type="button" value="/"></td>
+                </tr>
+            </div>
+
+        </table>
+    </div>
+
+</form>
+</body>
+</html>
