@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thuNhap=+prompt("Thu nhap: ")
+    let thue =0;
+    if(thuNhap>=84000000){
+        thue=thuNhap*0.35;
+
+    } else if(thuNhap>=44000000){
+        thue=thuNhap*0.3;
+
+    } else if(thuNhap>=24000000){
+        thue=thuNhap*0.25;
+    } else if(thuNhap>=14000000){
+        thue=thuNhap*0.2;
+    } else if(thuNhap>=9000000){
+        thue=thuNhap*0.15;
+    } else {
+        alert("Thue bang 0");
+    }
+    alert(thue);
+</script>
+</body>
+</html>

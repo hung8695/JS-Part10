@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let user=prompt("Nhap username: ");
+
+    if(user=="Admin"){
+        let pass=prompt("Nhap password: ");
+        if(pass=="TheMaster"){
+            alert("Welcome!");
+        } else if(pass==""){
+            alert("Canceled");
+        } else {
+            alert("Wrong password")
+        }
+    } else if(user==""){
+        alert('Canceled');
+    } else {
+        alert("I don't know ")
+    }
+</script>
+</body>
+</html>

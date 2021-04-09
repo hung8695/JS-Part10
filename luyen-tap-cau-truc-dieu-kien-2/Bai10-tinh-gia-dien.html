@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soDien=+prompt("Nhap so dien: ");
+    let tienPhaiTra=0;
+    if(soDien>=0 && soDien<=100){
+        alert("Tien phai tra = "+soDien*1000);
+    } else if(soDien<=150){
+        tienPhaiTra=100*1000+(soDien-100)*2000;
+        alert(tienPhaiTra);
+    } else if(soDien<=200){
+        tienPhaiTra=100*1000+50*2000+(soDien-150)*2500;
+        alert(tienPhaiTra);
+    } else {
+        tienPhaiTra=100*1000+50*2000+50*2500+(soDien-200)*3000;
+        alert(tienPhaiTra);
+    }
+</script>
+</body>
+</html>
