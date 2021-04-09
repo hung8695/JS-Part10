@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soPhutGoi=+prompt("Nhap so phut goi: ");
+    let cuocDienThoai=25000;
+    if(soPhutGoi<=50){
+        cuocDienThoai+=soPhutGoi*600;
+        alert("Tien cuoc la: "+cuocDienThoai);
+    } else if(soPhutGoi<=200){
+        cuocDienThoai=cuocDienThoai+(soPhutGoi-50)*600+50*600;
+        alert('Tien cuoc la: '+cuocDienThoai);
+    } else{
+        cuocDienThoai=(soPhutGoi-200)*200+150*400+50*600
+        alert("Tien cuoc la: "+cuocDienThoai)
+    }
+</script>
+</body>
+</html>

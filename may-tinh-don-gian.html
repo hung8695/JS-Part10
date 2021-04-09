@@ -5,12 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-<form>
-<input type="text" style="height: 30px;text-align: right" id="text"><br><br>
+
+<input  type="text" style="height: 30px;text-align: right" id="123" ><br><br>
+<p id="text1"></p>
     <table  width="30%">
         <tr>
-            <td><input id="1" type="button"  value="1"></td>
-            <td><input id="2" type="button"  value="2"></td>
+            <td><input id="1" type="button" onclick="document.getElementById('text1').innerText='daa'" value="1"></td>
+            <td><input id="2" type="button" onclick="getId(this.id)"  value="2"></td>
             <td><input id="3" type="button"  value="3"></td>
             <td><input id="4" type="button"  value="+"></td>
         </tr> <tr>
@@ -31,13 +32,15 @@
         </tr>
     </table>
     <script>
-function getId(id){
+function getValue(id){
     document.getElementById(id).value;
 }
 //  Ham lay id
-
+function hienthi(){
+    document.getElementById("123").innerText=getValue
+}
     </script>
 
-</form>
+
 </body>
 </html>
