@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="5">1</h1>
+<table>
+    <tr>
+        <td><img id="1" onclick="doiAnh(this.id)" src="ys1.jpg"></td>
+        <td><img id="2" onclick="doiAnh(this.id)" src="zed1.jpg"></td>
+        <td><img id="3" onclick="doiAnh(this.id)" src="ls1.jpg"></td>
+        <td><img id="4" onclick="doiAnh(this.id)" src="lux1.jpg"></td><br>
+
+    </tr>
+    <script>
+        var index=0;
+        function doiAnh(id){
+            var imgs =['ys1.jpg','ys2.jpg','ys3.jpg','ys4.jpg','lux1.jpg','lux2.jpg',
+            'lux3.jpg','lux4.jpg','ls1.jpg','ls2.jpg','ls3.jpg','ls4.jpg',
+            'zed1.jpg','zed2.jpg','zed3.jpg','zed4.jpg'];
+            document.getElementById(id).src=imgs[index];
+            index=Math.round(Math.random()*15);
+        }
+
+
+        var ys=['ys1.jpg','ys2.jpg','ys3.jpg','ys4.jpg'];
+        var lux=['lux1.jpg','lux2.jpg','lux3.jpg','lux4.jpg'];
+        var ls=['ls1.jpg','ls2.jpg','ls3.jpg','ls4.jpg'];
+        var zed=['zed1.jpg','zed2.jpg','zed3.jpg','zed4.jpg']
+
+
+
+
+
+
+
+
+
+
+        //window.onload=abc();
+
+    </script>
+</table>
+
+</body>
+</html>

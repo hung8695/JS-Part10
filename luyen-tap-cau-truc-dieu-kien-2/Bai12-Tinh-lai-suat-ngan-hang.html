@@ -7,7 +7,14 @@
 <body>
 <script>
     let soNo=+prompt("Nhap so tien vay: ");
-    let lai=0;
+    let thang=+prompt("Nhap so thang");
+
+   for(var i=1;i<=12;i++){
+       soNo+=soNo*0.03;
+       if(thang==i){
+           document.write('So tien phai tra la: '+soNo)
+       }
+   }
 
 </script>
 </body>
