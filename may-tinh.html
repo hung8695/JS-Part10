@@ -4,51 +4,59 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-
-
 <body>
 <form>
-    <div class="div-1">
-        <table width="20%">
-            <div>
-                <tr><td id="1" colspan="4"><input type="text"></td></tr>
-            </div>
-            <div class="div">
-                <tr class="tr1">
-                    <td ><input type="button" value="1"></td>
-                    <td ><input type="button" value="2"></td>
-                    <td ><input type="button" value="3"></td>
-                    <td ><input type="button" value="+"></td>
-                </tr>
-            </div>
-            <div class="div">
-                <tr class="tr1">
-                    <td><input type="button" value="4"></td>
-                    <td><input type="button" value="5"></td>
-                    <td><input type="button" value="6"></td>
-                    <td><input type="button" value="-"></td>
-                </tr>
-            </div>
-            <div class="div">
-                <tr class="tr1">
-                    <td><input type="button" value="7"></td>
-                    <td><input type="button" value="8"></td>
-                    <td><input type="button" value="9"></td>
-                    <td><input type="button" value="x"></td>
-                </tr>
-            </div>
-            <div class="div">
-                <tr class="tr1">
-                    <td><input type="button" value="C"></td>
-                    <td><input type="button" value="0"></td>
-                    <td><input type="button" value="="></td>
-                    <td><input type="button" value="/"></td>
-                </tr>
-            </div>
+    <table width="50%" border="1">
+        <tr>
+            <td colspan="4"><input type="text" size="50" id="result"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="insert(this.value)"></td>
+            <td><input type="button" value="2" onclick="insert(this.value)"></td>
+            <td><input type="button" value="3" onclick="insert(this.value)"></td>
+            <td><input type="button" value="+" onclick="insert(this.value)"></td>
 
-        </table>
-    </div>
 
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="insert(this.value)"></td>
+            <td><input type="button" value="5" onclick="insert(this.value)"></td>
+            <td><input type="button" value="6" onclick="insert(this.value)"></td>
+            <td><input type="button" value="-" onclick="insert(this.value)"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="insert(this.value)"></td>
+            <td><input type="button" value="8" onclick="insert(this.value)"></td>
+            <td><input type="button" value="9" onclick="insert(this.value)"></td>
+            <td><input type="button" value="*" onclick="insert(this.value)"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="C" id="nutC" onclick="clear();"></td>
+            <td><input type="button" value="0" id="nut0"></td>
+            <td><input type="button" value="=" id="nut=" onclick="calculate();"></td>
+            <td><input type="button" value="/" id="nut/"></td>
+
+        </tr>
+
+    </table>
 </form>
+<script>
+    let str="";
+    function insert(value){
+        str=document.getElementById("result").value;
+        str += value;
+        document.getElementById("result").value=str;
+    }
+    function calculate(){
+        strResult=document.getElementById("result").value;
+        document.getElementById("result").value=eval(strResult);
+    }
+    function clear(){
+        document.getElementById("result").value="";
+    }
+
+</script>
 </body>
 </html>
